@@ -1,0 +1,107 @@
+/*Mian Header*/
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.main-header {
+    background-image: url("images/technology.JPG");
+    background-size: cover;
+    padding: 15px;
+    color: white;
+    text-align: right;
+}
+/*Mian Navigation*/
+.main-nav{
+    background-color: #325;
+    overflow: hidden;
+}
+.main-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main-nav ul li{
+    float: left;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    display: inline-block;
+}
+.main-nav ul li a:hover{
+    background-color: #7DBA70;
+}
+.main-nav ul li a.active{
+    background-color: #669552;
+}
+.fa {
+    color: lightgrey;
+}
+/*Flash News*/
+.flash-news{
+    background-color: #669552;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    animation-name: flash-news;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes flash-news {
+    0%,50%,100% {background-color: #7DBA70}
+    25%,75%{background-color: #232518}
+}
+.flash-news p{
+    margin: 0;
+    animation-name: paragraph;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes paragraph {
+    0%{ transform: translateX(100%)}
+    100%{transform: translateX(-50%)}
+}
+/*Home news section*/
+.home-news-section{
+    width: 1100px;
+    height: auto;
+    margin-left: 150px;
+}
+.home-news-article{
+    border: 2px solid gray;
+    width: 340px;
+    height: 550px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 1s;
+}
+.home-news-article:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 15px #232518;
+    width: 350px;
+}
+.home-news-article img{
+    width: 100%;
+}
+.home-news-text {
+    padding: 10px;
+}
+.break {
+    clear: both;
+}
+/*main footer*/
+.main-footer {
+    background-color: #232518;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.main-footer small,.main-footer a,.fa-user-circle-o {
+    color: orange;
+}
